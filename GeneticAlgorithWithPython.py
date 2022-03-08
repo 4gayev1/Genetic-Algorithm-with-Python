@@ -25,7 +25,7 @@ try:
         X = np.linspace(-5.12, 5.12, 50)
         Ze = 0
         for i in range(len(X)):
-            Ze += X[i] ** 2 - 10 * np.cos(2 * np.pi * X[i])
+            Ze += X[i] ** 2 - 10 * np.cos(2 * np.pi * X[i]) # Rastrigin function
         return (Ze)
 
 
@@ -111,9 +111,6 @@ try:
             gen_random.sort()
             print("Result:", gen_random)
             print("Result:", gen_random[0])
-
-
-
 
     genetic_algorithms()
 
